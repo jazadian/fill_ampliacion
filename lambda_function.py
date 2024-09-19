@@ -55,7 +55,7 @@ def lambda_handler(event, context):
         db = client['canastas'] 
         buckets_collection = db['status_ampliacion']
         document = {
-                    "id_solicitud": event.get('id'),
+                    "id_ampliacion": event.get('id'),
                     "description": "waiting_lambda",
                     "createdAt": datetime.utcnow()# Use UTC for consistent time zone
                 }
